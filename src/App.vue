@@ -7,11 +7,13 @@
         <v-layout row wrap>
           <v-flex xs10 offset-xs1>
             <app-home>
-              <h2>Pick your team</h2>
+              <h2>Choose your team</h2>
             </app-home>
-          </v-flex>
-        <team-list></team-list>
+          </v-flex>        
         </v-layout>
+
+        <team-list></team-list>
+
       </v-container>
     
     <app-footer></app-footer>
