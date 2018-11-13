@@ -1,10 +1,10 @@
 <template>
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
-        <v-flex v-for="team in teams" xs2>
+        <v-flex v-for="team in teams" pa-3 xs4 sm2 md2>
     <!--    {{ team.location }}
             {{ team.name }} -->
-            <v-img :src="team.logo" pa5/> 
+            <v-img :src="team.logo" /> 
         </v-flex>
     </v-layout>
   </v-container>
