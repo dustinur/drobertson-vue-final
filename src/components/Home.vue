@@ -1,7 +1,7 @@
 <template>
     <div>
         <slot></slot>
-        <hr>
+        <v-divider class="mb-2"/>
     </div>
 </template>
 

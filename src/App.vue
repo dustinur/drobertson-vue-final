@@ -7,7 +7,7 @@
         <v-layout row wrap>
           <v-flex xs10 offset-xs1>
             <app-home>
-              <h2>Choose your team</h2>
+              <h2 class="pb-3">Select Your Team</h2>
             </app-home>
           </v-flex>        
         </v-layout>
