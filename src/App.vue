@@ -7,7 +7,7 @@
         <v-layout row wrap>
           <v-flex xs10 offset-xs1>
             <router-view name="teamDetails"></router-view>
-            <transition name="fade">
+            <transition name="slide">
               <router-view>
                 <h2 class="pb-3">NBA Scorecard</h2>
               </router-view>
@@ -41,6 +41,14 @@
 </script>
 
 <style>
+.enter { transform: translateX(100%) }
+.enter-to { transform: translateX(0) }
+.slide-enter-active { position: absolute }
 
+.leave { transform: translateX(0) }
+.leave-to { transform: translateX(-100%) }
+
+.slide-enter-active,
+.slide-leave-active { transition: all 750ms ease-in-out }
 </style>
 
