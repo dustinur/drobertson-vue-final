@@ -1,6 +1,7 @@
 import TeamList from './components/TeamList.vue';
 import TeamRanking from './components/teams/TeamRanking.vue';
 import TeamDetails from './components/teams/TeamDetails.vue';
+import SignUp from './components/user/SignUp.vue';
 import Header from './components/Header.vue';
 
 export const routes = [
@@ -18,6 +19,12 @@ export const routes = [
             { path: ':id', component: TeamDetails }
             // { path: ':id/edit', component: UserEdit, name: 'userEdit' }
         ]
+    },
+    {
+        path: '/user', components: {
+            default: SignUp,
+            'header-bottom': Header
+        }
     },
     { path: '/redirect-me', redirect: { name: 'home' } },
     { path: '*', redirect: '/' }

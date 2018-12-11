@@ -12,16 +12,15 @@
           </v-flex>        
         </v-layout>
 
-        <team-list></team-list>
+        <!-- <team-list></team-list>
 
         <button class="btn btn-primary" @click="fetchData">Get Data</button>
         <br><br>
         <ul class="list-group">
             <li class="list-group-item" v-for="team in teams">
               {{ team.city }} - {{ team.name }}
-                <!-- {{ team }} -->
               </li>
-        </ul>
+        </ul> -->
       <router-view></router-view>
       </v-container>
     
