@@ -15,7 +15,7 @@ const router = new VueRouter({
   mode: 'history'
 });
 
-Vue.http.options.root = 'https://nba-stats-46f17.firebaseio.com/teams';
+// Vue.http.options.root = 'https://nba-stats-46f17.firebaseio.com/teams.json';
 // Vue.http.interceptors.push((request, next) => {
 //   console.log(request);
 //   if (request.method == 'POST') {

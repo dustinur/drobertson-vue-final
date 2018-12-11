@@ -1,11 +1,21 @@
 import TeamDetails from './components/teams/TeamDetails.vue';
 import SignUp from './components/user/SignUp.vue';
 import Home from './components/Home.vue';
+// import Header from './components/Header.vue';
+// import Footer from './components/Footer.vue';
+// import Nav from './components/Nav.vue';
+
 
 export const routes = [
-    { path: '', component: Home },
-    { path: '/teams', component: TeamDetails },
-    { path: '/user', component: SignUp }
+    { path: '', name: 'home', components: {
+        default: Home,
+    } },
+    { path: '/teams', name: 'teamDetails', components: {
+        default: TeamDetails
+    } },
+    { path: '/user', name: 'signUp', components: {
+        default: SignUp,
+    } }
 
 
     //     path: '', name: 'Home', components: {
