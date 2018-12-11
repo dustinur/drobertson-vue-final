@@ -4,17 +4,23 @@
         <v-divider class="mb-4"/>
         
         <v-btn color="info" @click="getRecords">Show Records</v-btn>
-        <ul class="list-group">
+        <!-- <ul class="list-group">
             <li class="list-group-item mt-4" v-bg="'#f6f6f6'" v-for="g in games">
               <h2>{{ g.location }} {{ g.name }}</h2>
               <h3>{{ g.wins }} - {{ g.losses }}</h3>
               </li>
-        </ul>
+        </ul> -->
+        <app-display-teams :games="games"></app-display-teams>
     </div>
 </template>
 
 <script>
-export default {
+  import DisplayTeams from './DisplayTeams.vue';
+
+  export default {
+    components: {
+      appDisplayTeams:  DisplayTeams,
+    },
     data() {
             return {
                 game: {

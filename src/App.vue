@@ -27,12 +27,14 @@
   import Header from './components/Header.vue';
   import Home from './components/Home.vue';
   import Footer from './components/Footer.vue';
+  import DisplayTeams from './components/DisplayTeams.vue';
 
   export default {
     components: {
       appHeader:  Header,
       appHome: Home,
       appFooter: Footer,
+      appDisplayTeams:  DisplayTeams,
     }
   }
 
