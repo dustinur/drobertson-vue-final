@@ -1,6 +1,9 @@
 <template>
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
+        <v-flex xs10 offset-xs1>
+              <h2 class="pb-3">Teams</h2>
+        </v-flex>  
         <v-flex v-for="team in teams" pa-3 xs4 sm2 md2>
             <v-img :src="team.logo" /> 
         </v-flex>

@@ -7,7 +7,7 @@
         <v-layout row wrap>
           <v-flex xs10 offset-xs1>
             <router-view>
-              <h2 class="pb-3">Select Your Team</h2>
+              <h2 class="pb-3">NBA Scorecard</h2>
             </router-view>
           </v-flex>        
         </v-layout>
