@@ -2,7 +2,6 @@
     <div>
         <slot></slot>
         <v-divider class="mb-2"/>
-        <h1>Home</h1>
     </div>
 </template>
 
